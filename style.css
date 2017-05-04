@@ -1,0 +1,313 @@
+* {
+    margin:0;
+}
+a {
+    text-decoration: none;
+}
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+    font-family: "Courier New";
+    height: 100%;
+    width: 960px;
+    margin: auto;
+    padding: 0;
+    outline: none;
+    zoom: 90%;
+    background: url("img/background.jpg") no-repeat;
+    background-size: cover;
+}
+
+/*------Хедер-------*/
+.navigation {
+    display: block;
+    margin: 0;
+    width: 100%;
+    height: 200px;
+    background: url("img/header.jpg");
+    background-size: cover;
+    border-radius: 0 0 100px 100px;
+    opacity: 0.9;
+}
+
+.navigation__ul {
+    display: block;
+    height: inherit;
+    width: 960px;
+    margin: auto;
+    padding: 0;
+}
+
+.navigation__ul__item {
+    float: left;
+    display: block;
+    height: inherit;
+    padding: 0;
+    margin-left: 30px;
+}
+
+.navigation__ul__item__link {
+    font-weight: 800;
+    color: white;
+    text-decoration: none;
+    line-height: 200px;
+    font-size: 1.5em;
+    margin: auto;
+}
+
+.navigation__ul__item-last {
+    float: right;
+    font-weight: 500;
+    color: white;
+    line-height: 200px;
+    margin-right: 20px;
+    display: block;
+    height: inherit;
+    padding: 0;
+}
+
+.navigation__ul__item__logo {
+    width: 180px;
+    height: 180px;
+}
+
+.navigation__ul__item__link:hover {
+    color: #67e5dd;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*------Футер-------*/
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 960px;
+    margin: auto;
+    height: 100px;
+    background: url("img/header.jpg");
+    background-size: cover;
+    border-radius: 100px 100px 0 0;
+}
+.footer-container {
+    margin: 40px auto 0 auto;
+    width: 60%;
+}
+.footer-container__text {
+    text-align: center;
+    color: white;
+    font-size: 1.2em;
+}
+
+/*------Контент страницы main-------*/
+.main-container-fieldset-main__logout {
+    display: block;
+    font-weight: 800;
+    color: #3f2526;
+    font-size: 1.6em;
+    float: right;
+}
+.main-container-fieldset-main__add-test {
+    display: block;
+    font-weight: 800;
+    color: #3f2526;
+    font-size: 1.6em;
+    float: left;
+}
+.main-container {
+    height: 100%;
+    display: block;
+    width: 960px;
+    margin: auto;
+}
+
+.main-container__h1 {
+    font-size: 8em;
+    font-weight: 500;
+    font-family: Corbel, sans-serif;
+    color: white;
+    margin: 0;
+    text-align: center;
+}
+.main-container__h2 {
+    font-size: 2em;
+    font-weight: 500;
+    font-family: Corbel, sans-serif;
+    color: #67e5dd;
+    text-align: center;
+}
+
+.main-container-p__button {
+    text-align: center;
+}
+
+.main-container__button {
+    margin: 40px auto;
+    height: 60px;
+    width: 300px;
+    outline: none;
+    background-color: transparent;
+    border: solid white 3px;
+    border-radius: 10px;
+    -moz-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    -webkit-transition: all 0.5s linear;
+    cursor: pointer;
+/*Текст*/
+    font-weight: 800;
+    font-family: "Courier New";
+    color: white;
+    font-size: 1.8em;
+}
+.main-container__button-file {
+    border: solid white 3px;
+    width: 80%;
+    border-radius: 10px;
+    -moz-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    -webkit-transition: all 0.5s linear;
+    /*Текст*/
+    font-size: 2em;
+    font-family: "Courier New";
+    font-weight: 700;
+    color: white;
+}
+
+.main-container__button:hover {
+    width: 400px;
+    border: solid #67e5dd 3px;
+    cursor: pointer;
+    /*Текст*/
+    font-family: "Courier New";
+    color: dodgerblue;
+}
+.main-container__button-file:hover {
+    border: solid #67e5dd 3px;
+    cursor: pointer;
+    /*Текст*/
+    color: dodgerblue;
+}
+.main-container-fieldset-main {
+    margin: 10px auto;
+    width: 85%;
+    height: 100%;
+    border: solid white 4px;
+    border-radius: 50px;
+    padding: 20px;
+    background: rgba(242, 239, 239, 0.75);
+}
+
+.main-container__link {
+    -moz-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    -webkit-transition: all 0.5s linear;
+    text-decoration: none;
+    font-family: "Courier New";
+    font-size: 1.6em;
+    font-weight: 600;
+    color: white;
+}
+
+.main-container__link:hover {
+    color: dodgerblue;
+}
+.answer-text-color {
+    color: #67e5dd;
+    font-weight: 600;
+    font-size: 1.4em;
+}
+
+.inputNumber-form {
+    border: 3px solid #67e5dd;
+    border-radius: 15px;
+    width: 400px;
+    height: 30px;
+    font-size: 1.4em;
+    font-weight: 600;
+}
+
+.fieldset-image {
+    text-align: center;
+    margin: 0px;
+}
+
+
+/*---------Таблица данных---------*/
+.main-container-table {
+    border-spacing: 5px;
+    padding: 10px;
+    margin: auto;
+    border: solid #67e5dd 4px;
+    border-radius: 10px;
+}
+
+.table-row {
+    border: solid #67e5dd 3px;
+    height: 2em;
+}
+
+.table-cell {
+    font-size: 1em;
+    border: solid #67e5dd 3px;
+    border-radius: 10px;
+    font-weight: 800;
+    text-align: center;
+    padding: 10px 5px;
+}
+
+/*------------Страница Тесты--------------*/
+.main-container-fieldset-tests {
+    color: #3f2526;
+    font-family: "Courier New";
+    font-size: 1.4em;
+    font-weight: 600;
+    border-radius: 20px;
+    border: solid #67e5dd 3px;
+    margin-bottom: 20px;
+}
+.main-container-fieldset-tests__legend {
+    border: solid white 1px;
+    border-radius: 5px;
+}
+.main-container__button-check {
+    margin: 15px auto;
+    height: 60px;
+    width: 300px;
+    outline: none;
+    background-color: transparent;
+    border: solid #67e5dd 3px;
+    border-radius: 10px;
+    -moz-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    -webkit-transition: all 0.5s linear;
+    cursor: pointer;
+    /*Текст*/
+    font-weight: 800;
+    font-family: "Courier New";
+    color: #3f2526;
+    font-size: 1.8em;
+}
+.main-container__button-check:hover {
+    width: 400px;
+    border: solid #67e5dd 3px;
+    /*Текст*/
+    color: dodgerblue;
+}
+.main-container-fieldset-main__text {
+    font-weight: 800;
+    color: #3f2526;
+    font-size: 1.6em;
+    text-align: center;
+}
+.main-container-fieldset-main__input {
+    border: solid white 2px;
+    border-radius: 10px;
+    width: 300px;
+    height: 25px;
+}
+
